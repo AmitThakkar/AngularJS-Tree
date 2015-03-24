@@ -8,6 +8,7 @@
       template: '<node ng-repeat="node in tree"></node>',
       replace: true,
       restrict: 'E',
+      transclude: true,
       scope: {
         tree: '=children'
       }
@@ -41,7 +42,8 @@
         }
       },
       controller: ["$scope", function($scope) {
-        $scope.checkNode = function (node) {
+        $scope.checkNode = function (event, node) {
+          event.stopPropagation();
           node.checked = !node.checked;
           function checkChildren(c) {
             angular.forEach(c.children, function (c) {
@@ -51,9 +53,6 @@
           }
 
           checkChildren(node);
-        };
-        $scope.switcher = function (booleanExpr, trueValue, falseValue) {
-          return booleanExpr ? trueValue : falseValue;
         };
         $scope.isLeaf = function (_data) {
           return _data && _data.children && _data.children.length == 0;
