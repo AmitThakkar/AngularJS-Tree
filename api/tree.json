@@ -1,0 +1,1076 @@
+[
+  {
+    "name": "cellSessions",
+    "checked": false,
+    "show": true,
+    "children": [
+      {
+        "name": "[0]",
+        "checked": false,
+        "show": true,
+        "children": [
+          {
+            "name": "cellSubTechDataList",
+            "checked": false,
+            "show": true,
+            "children": [
+              {
+                "name": "[0]",
+                "checked": false,
+                "show": true,
+                "children": [
+                  {
+                    "name": "wAvgTxThrpt",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  },
+                  {
+                    "name": "duration",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  },
+                  {
+                    "name": "rx",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  },
+                  {
+                    "name": "wAvgRxThrpt",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  },
+                  {
+                    "name": "tx",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  },
+                  {
+                    "name": "signal",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  },
+                  {
+                    "name": "cellSubTech",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "cellSubTech",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "cellTech",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "cellTechChanged",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "mobileHs",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "bestCandidateGradeCnr",
+            "checked": false,
+            "show": true,
+            "children": [
+              {
+                "name": "ssid",
+                "checked": false,
+                "show": true,
+                "children": [
+                  {
+                    "name": "[0]",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "bssid",
+                "checked": false,
+                "show": true,
+                "children": [
+                  {
+                    "name": "[0]",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "cnr",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "category",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "affinityType",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "encType",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "isCandidate",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "numConnFailure",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "numInetFailure",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "opnNetworkId",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "profileStatus",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "qualityGrade",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "serviceType",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "signal",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "accessibility",
+                "checked": false,
+                "show": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "quality",
+            "checked": false,
+            "show": true,
+            "children": [
+              {
+                "name": "wAvgTxThrpt",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "wAvgRxThrpt",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "wAvgLatency",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "latency",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "maxRxThrpt",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "maxTxThrpt",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "minSignal",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "signal",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "exitSignal",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "bw",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "avgSignal",
+                "checked": false,
+                "show": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "capexTrafficCost",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "wefiTx",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "wefiRx",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "wefiEngTx",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "opexTrafficCost",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "wefiEngRx",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "tx",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "rx",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "serverTalkStatus",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "bestCandidateType",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "opnNetworkId",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "inetState",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "disconnectReason",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "connectedGrade",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "wimaxData",
+            "checked": false,
+            "show": true,
+            "children": [
+              {
+                "name": "bsid",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "nap",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "nsp",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "wimaxState",
+                "checked": false,
+                "show": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "wifiData",
+            "checked": false,
+            "show": true,
+            "children": [
+              {
+                "name": "candidatesWifi",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "wifiAround",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "wifiState",
+                "checked": false,
+                "show": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "pkg",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "osVersion",
+            "checked": false,
+            "show": true,
+            "children": [
+              {
+                "name": "osBuild",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "osMaj",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "osMin",
+                "checked": false,
+                "show": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "cellData",
+            "checked": false,
+            "show": true,
+            "children": [
+              {
+                "name": "lac",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "cellId",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "cellDataState",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "cellAround",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "networkType",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "plmn",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "qualityGrade",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "signal",
+                "checked": false,
+                "show": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "cnrList",
+            "checked": false,
+            "show": true,
+            "children": [
+              {
+                "name": "[0]",
+                "checked": false,
+                "show": true,
+                "children": [
+                  {
+                    "name": "ssid",
+                    "checked": false,
+                    "show": true,
+                    "children": [
+                      {
+                        "name": "[0]",
+                        "checked": false,
+                        "show": true,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "bssid",
+                    "checked": false,
+                    "show": true,
+                    "children": [
+                      {
+                        "name": "[0]",
+                        "checked": false,
+                        "show": true,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "cnr",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  },
+                  {
+                    "name": "category",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  },
+                  {
+                    "name": "affinityType",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  },
+                  {
+                    "name": "encType",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  },
+                  {
+                    "name": "isCandidate",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  },
+                  {
+                    "name": "numConnFailure",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  },
+                  {
+                    "name": "numInetFailure",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  },
+                  {
+                    "name": "opnNetworkId",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  },
+                  {
+                    "name": "profileStatus",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  },
+                  {
+                    "name": "qualityGrade",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  },
+                  {
+                    "name": "serviceType",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  },
+                  {
+                    "name": "signal",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  },
+                  {
+                    "name": "accessibility",
+                    "checked": false,
+                    "show": true,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "location",
+            "checked": false,
+            "show": true,
+            "children": [
+              {
+                "name": "longt",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "lat",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "accuracy",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "msSinceStart",
+                "checked": false,
+                "show": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "groups",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "batteryCharge",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "crTmSrvr",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "appVer",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "crTmLcl",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "duration",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "wefiVersion",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "parentConnId",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "connectionId",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "locChangeCount",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "bgFetchCount",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "connectionMode",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "batteryPercentEnd",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "provId",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "batteryPercentBegin",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "sessType",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "group",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "distance",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "crashState",
+            "checked": false,
+            "show": true,
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "noConnSessions",
+    "checked": false,
+    "show": true,
+    "children": [
+      {
+        "name": "[0]",
+        "checked": false,
+        "show": true,
+        "children": [
+          {
+            "name": "wimaxData",
+            "checked": false,
+            "show": true,
+            "children": [
+              {
+                "name": "bsid",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "nap",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "nsp",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "wimaxState",
+                "checked": false,
+                "show": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "wifiData",
+            "checked": false,
+            "show": true,
+            "children": [
+              {
+                "name": "candidatesWifi",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "wifiAround",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "wifiState",
+                "checked": false,
+                "show": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "pkg",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "osVersion",
+            "checked": false,
+            "show": true,
+            "children": [
+              {
+                "name": "osBuild",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "osMaj",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "osMin",
+                "checked": false,
+                "show": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "cellData",
+            "checked": false,
+            "show": true,
+            "children": [
+              {
+                "name": "lac",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "cellId",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "cellDataState",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "cellAround",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "networkType",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "plmn",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "qualityGrade",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "signal",
+                "checked": false,
+                "show": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "location",
+            "checked": false,
+            "show": true,
+            "children": [
+              {
+                "name": "longt",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "lat",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "accuracy",
+                "checked": false,
+                "show": true,
+                "children": []
+              },
+              {
+                "name": "msSinceStart",
+                "checked": false,
+                "show": true,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "groups",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "batteryCharge",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "crTmSrvr",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "appVer",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "crTmLcl",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "duration",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "wefiVersion",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "parentConnId",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "connectionId",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "locChangeCount",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "bgFetchCount",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "connectionMode",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "batteryPercentEnd",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "provId",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "batteryPercentBegin",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "sessType",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "group",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "distance",
+            "checked": false,
+            "show": true,
+            "children": []
+          },
+          {
+            "name": "crashState",
+            "checked": false,
+            "show": true,
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "sessionId",
+    "checked": false,
+    "show": true,
+    "children": []
+  }
+]

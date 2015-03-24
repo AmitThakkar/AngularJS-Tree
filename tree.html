@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app="tree">
+<head>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"/>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+</head>
+<body>
+<div ng-controller="TreeController as tc">
+  <div class="span5 article-tree">
+    <div ng-style="{'overflow': 'auto'}">
+      <div class="tree well">
+        <ul>
+          <node-tree children="tc.tree"></node-tree>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="lib/angular.min.js"></script>
+<script src="src/Controllers/TreeController.js"></script>
+<script src="src/Services/TreeService.js"></script>
+<script src="src/Config/URLConfig.js"></script>
+<script src="src/Directives/TreeDirectives.js"></script>
+<script src="http://ci.angularjs.org/job/angularui-bootstrap/ws/dist/ui-bootstrap-tpls-0.1.1-SNAPSHOT.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</body>
+</html>
+
+
