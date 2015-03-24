@@ -8,7 +8,6 @@
       template: '<node ng-repeat="node in tree"></node>',
       replace: true,
       restrict: 'E',
-      transclude: true,
       scope: {
         tree: '=children'
       }
@@ -21,29 +20,23 @@
       templateUrl: 'partials/the-tree.html',
       link: function (scope, elm) {
         $(elm).find('span.leaf').on('click', function (e) {
-
           var children = $(elm).find('li');
-
           if (children.is(":visible")) {
             children.hide('fast');
             $(elm).find('span.leaf i.icon-minus-sign').addClass('icon-plus-sign').removeClass('icon-minus-sign');
-          }
-          else {
-
+          } else {
             children.show('fast');
             $(elm).find('span.leaf i.icon-plus-sign').addClass('icon-minus-sign').removeClass('icon-plus-sign');
           }
           e.stopPropagation();
         });
-
         if (scope.node && scope.node.children && scope.node.children.length > 0) {
           var childNode = $compile('<ul><node-tree children="node.children"></node-tree></ul>')(scope);
           elm.append(childNode);
         }
       },
       controller: ["$scope", function($scope) {
-        $scope.checkNode = function (event, node) {
-          event.stopPropagation();
+        $scope.checkNode = function (node) {
           node.checked = !node.checked;
           function checkChildren(c) {
             angular.forEach(c.children, function (c) {
