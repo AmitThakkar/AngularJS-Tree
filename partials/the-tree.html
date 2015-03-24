@@ -2,7 +2,7 @@
   <span ng-click="checkNode(node)">
     <input type="checkbox" ng-checked="node.checked">
   </span>
-  <span class="leaf">
+  <span class="leaf" ng-click="toggleVisibility(node)">
     {{node.name}}
   </span>
 </li>

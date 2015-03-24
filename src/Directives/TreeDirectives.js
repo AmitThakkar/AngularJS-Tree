@@ -18,21 +18,16 @@
       restrict: 'E',
       replace: true,
       templateUrl: 'partials/the-tree.html',
-      link: function (scope, elm) {
-        $(elm).find('span.leaf').on('click', function (e) {
-          var children = $(elm).find('li');
-          if (children.is(":visible")) {
-            children.hide('fast');
-          } else {
-            children.show('fast');
-          }
-        });
+      link: function (scope, element) {
         if (scope.node && scope.node.children && scope.node.children.length > 0) {
-          var childNode = $compile('<ul><node-tree children="node.children"></node-tree></ul>')(scope);
-          elm.append(childNode);
+          var childNode = $compile('<ul ng-if="!node.visibility"><node-tree children="node.children"></node-tree></ul>')(scope);
+          element.append(childNode);
         }
       },
-      controller: ["$scope", function($scope) {
+      controller: ["$scope", function ($scope) {
+        $scope.toggleVisibility = function (node) {
+          node.visibility = !node.visibility;
+        };
         $scope.checkNode = function (node) {
           node.checked = !node.checked;
           function checkChildren(c) {
@@ -43,9 +38,6 @@
           }
 
           checkChildren(node);
-        };
-        $scope.isLeaf = function (_data) {
-          return _data && _data.children && _data.children.length == 0;
         };
       }]
     };
