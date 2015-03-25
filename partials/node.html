@@ -1,6 +1,6 @@
-<li class="parent_li">
+<li>
   <input ng-click="checkNode(node)" type="checkbox" ng-checked="node.checked">
   <span class="leaf" ng-click="toggleVisibility(node)">
-    {{node.name}}
+    {{ $index + 1 }}. {{ node.name }}
   </span>
 </li>

@@ -1,3 +1,7 @@
-ul {
+ul.tree {
   list-style: none;
+}
+
+ul.tree>li {
+  margin: 10px;
 }
