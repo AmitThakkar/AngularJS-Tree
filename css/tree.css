@@ -2,6 +2,10 @@ ul.tree {
   list-style: none;
 }
 
-ul.tree>li {
+ul.tree > li {
   margin: 10px;
+}
+
+ul.tree > li > span {
+  cursor: pointer;
 }
