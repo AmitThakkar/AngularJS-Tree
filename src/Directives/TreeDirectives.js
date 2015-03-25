@@ -17,7 +17,7 @@
     return {
       restrict: 'E',
       replace: true,
-      templateUrl: 'partials/the-tree.html',
+      templateUrl: 'partials/node.html',
       link: function (scope, element) {
         if (scope.node && scope.node.children && scope.node.children.length > 0) {
           var childNode = $compile('<ul ng-if="!node.visibility"><node-tree children="node.children"></node-tree></ul>')(scope);
