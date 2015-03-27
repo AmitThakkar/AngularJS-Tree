@@ -63,7 +63,8 @@ And ```JSON``` for the **tree** will be looks like as below:
 ]
 ```
 
-Lets see, how have I implemented this? For implementing **tree**, I have created 2 **directives**.
+Lets see, how have I implemented this? For implementing the **tree**, I have created 2 **directives**.
+
 1. **nodeTree** : A **isolated** **scope** **directive** which will loop to the all the siblings and add another **directive**(node) for each sibling.
 2. **node** : A **directive** which represent a node/element and create sub **tree** is it has children.
 
@@ -82,17 +83,22 @@ app.directive('node', function ($compile) {
   return {
     restrict: 'E',
     replace: true,
-    templateUrl: 'partials/node.html',
+    templateUrl: 'partials/node.html', // HTML for a single node.
     link: function (scope, element) {
+      /*
+       * Here we are checking that if current node has children then compiling/rendering children.
+       * */
       if (scope.node && scope.node.children && scope.node.children.length > 0) {
         var childNode = $compile('<ul class="tree" ng-if="!node.visibility"><node-tree children="node.children"></node-tree></ul>')(scope);
         element.append(childNode);
       }
     },
     controller: ["$scope", function ($scope) {
+      // This function is for just toggle the visibility of children
       $scope.toggleVisibility = function (node) {
         node.visibility = !node.visibility;
       };
+      // Here We are marking check/un-check all the nodes. 
       $scope.checkNode = function (node) {
         node.checked = !node.checked;
         function checkChildren(c) {
