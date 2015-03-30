@@ -2,11 +2,11 @@
 
 This repository is for creating a **tree** **structure** with **AngularJS**.
 
-In this blog we will implement **tree** **structure** with **AngularJS** and resultant **tree** will be looks like below:
+In this blog we will implement **tree** **structure** with **AngularJS** and resultant **tree** will look like below:
 
 ![tree.png](https://raw.githubusercontent.com/AmitThakkar/AngularJS-Tree/master/images/tree.png)
 
-And ```JSON``` for the **tree** will be looks like as below:
+And ```JSON``` for the **tree** is as given below:
 
 ```JSON
 [
@@ -63,10 +63,10 @@ And ```JSON``` for the **tree** will be looks like as below:
 ]
 ```
 
-Lets see, how have I implemented this? For implementing the **tree**, I have created 2 **directives**.
+Let's see, how I have implemented this? For implementing the **tree**, I have created 2 **directives**.
 
-1. **nodeTree** : A **isolated** **scope** **directive** which will loop to the all the siblings and add another **directive**(node) for each sibling.
-2. **node** : A **directive** which represent a node/element and create sub **tree** is it has children.
+1. **nodeTree** : An **isolated** **scope** **directive** which will loop to the all the siblings and add another **directive**(node) for each sibling.
+2. **node** : A **directive** which represents a node/element and creates sub **tree** as its children.
 
 ```JavaScript
 app.directive('nodeTree', function () {
