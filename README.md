@@ -1,12 +1,12 @@
 # AngularJS Tree
 
-This repository is for creating a **tree** **structure** with **AngularJS**.
+This repository is for creating a <strong>tree</strong> <strong>structure</strong> with <strong>AngularJS</strong>.
 
-In this blog we will implement **tree** **structure** with **AngularJS** and resultant **tree** will look like below:
+In this blog we will implement <strong>tree</strong> <strong>structure</strong> with <strong>AngularJS</strong> and resultant <strong>tree</strong> will look like below:
 
 ![tree.png](https://raw.githubusercontent.com/AmitThakkar/AngularJS-Tree/master/images/tree.png)
 
-And ```JSON``` for the **tree** is as given below:
+And ```JSON``` for the <strong>tree</strong> is as given below:
 
 ```JSON
 [
@@ -63,10 +63,10 @@ And ```JSON``` for the **tree** is as given below:
 ]
 ```
 
-Let's see, how I have implemented this? For implementing the **tree**, I have created 2 **directives**.
+Let's see, how I have implemented this? For implementing the <strong>tree</strong>, I have created 2 <strong>directives</strong>.
 
-1. **nodeTree** : An **isolated** **scope** **directive** which will loop to the all the siblings and add another **directive**(node) for each sibling.
-2. **node** : A **directive** which represents a node/element and creates sub **tree** as its children.
+1. <strong>nodeTree</strong> : An <strong>isolated</strong> <strong>scope</strong> <strong>directive</strong> which will loop to the all the siblings and add another <strong>directive</strong>(node) for each sibling.
+2. <strong>node</strong> : A <strong>directive</strong> which represents a node/element and creates sub <strong>tree</strong> as its children.
 
 ```JavaScript
 app.directive('nodeTree', function () {
@@ -113,3 +113,5 @@ app.directive('node', function ($compile) {
   };
 });
 ```
+
+You can checkout working **tree** demo from my [Github Repo](https://github.com/AmitThakkar/AngularJS-Tree).
