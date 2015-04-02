@@ -33,8 +33,14 @@
         $scope.symbol = '+';
         // This function is for just toggle the visibility of children
         $scope.toggleVisibility = function (node) {
-          node.visibility = !node.visibility;
-          $scope.symbol = '-';
+          if(node.children) {
+            node.visibility = !node.visibility;
+            if ($scope.symbol == '-') {
+              $scope.symbol = '+';
+            } else {
+              $scope.symbol = '-';
+            }
+          }
         };
         // Here We are marking check/un-check all the nodes.
         $scope.checkNode = function (node) {
