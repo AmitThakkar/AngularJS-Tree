@@ -23,23 +23,18 @@
                  * Here we are checking that if current node has children then compiling/rendering children.
                  * */
                 if (scope.node && scope.node.children && scope.node.children.length > 0) {
-                    var childNode = $compile('<ul class="tree" ng-if="node.visibility"><node-tree children="node.children"></node-tree></ul>')(scope);
+                    scope.node.childrenVisibility = true;
+                    var childNode = $compile('<ul class="tree" ng-if="!node.childrenVisibility"><node-tree children="node.children"></node-tree></ul>')(scope);
                     element.append(childNode);
                 } else {
-                    scope.symbol = '-';
+                    scope.node.childrenVisibility = false;
                 }
             },
             controller: ["$scope", function ($scope) {
-                $scope.symbol = '+';
                 // This function is for just toggle the visibility of children
                 $scope.toggleVisibility = function (node) {
                     if (node.children) {
-                        node.visibility = !node.visibility;
-                        if ($scope.symbol == '-') {
-                            $scope.symbol = '+';
-                        } else {
-                            $scope.symbol = '-';
-                        }
+                        node.childrenVisibility = !node.childrenVisibility;
                     }
                 };
                 // Here We are marking check/un-check all the nodes.
