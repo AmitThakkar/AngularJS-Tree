@@ -1,11 +1,11 @@
 ul.tree {
-  list-style: none;
+    list-style: none;
 }
 
 ul.tree > li {
-  margin: 10px;
+    margin: 10px;
 }
 
 ul.tree > li > span {
-  cursor: pointer;
+    cursor: pointer;
 }
