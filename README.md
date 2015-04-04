@@ -114,4 +114,4 @@ app.directive('node', function ($compile) {
 });
 ```
 
-You can checkout working **tree** demo from my [Github Repo](https://github.com/AmitThakkar/AngularJS-Tree).
+You can checkout working **tree** demo from my [Github Repo](https://github.com/AmitThakkar/AngularJS-Tree)
