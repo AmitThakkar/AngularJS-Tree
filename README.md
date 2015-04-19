@@ -6,7 +6,7 @@ In this blog we will implement <strong>tree</strong> <strong>structure</strong> 
 
 ![tree.png](https://raw.githubusercontent.com/AmitThakkar/AngularJS-Tree/master/images/tree.png)
 
-And ```JSON``` for the <strong>tree</strong> is as given below:
+And ```valid JSON``` for the <strong>tree</strong> is as given below:
 
 ```JSON
 [
@@ -114,4 +114,4 @@ app.directive('node', function ($compile) {
 });
 ```
 
-You can checkout working **tree** demo from my [Github Repo](https://github.com/AmitThakkar/AngularJS-Tree).
+You can checkout working **tree** demo from my [Github Repo](https://github.com/AmitThakkar/AngularJS-Tree)
