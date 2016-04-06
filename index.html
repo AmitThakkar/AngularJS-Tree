@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Angularjs-tree by AmitThakkar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Angularjs-tree</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/AmitThakkar/AngularJS-Tree" class="btn">View on GitHub</a>
+      <a href="https://github.com/AmitThakkar/AngularJS-Tree/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/AmitThakkar/AngularJS-Tree/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="angularjs-tree" class="anchor" href="#angularjs-tree" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>AngularJS Tree</h1>
+
+<p>This repository is for creating a <strong>tree</strong> <strong>structure</strong> with <strong>AngularJS</strong>.</p>
+
+<p>In this blog we will implement <strong>tree</strong> <strong>structure</strong> with <strong>AngularJS</strong> and resultant <strong>tree</strong> will look like below:</p>
+
+<p><img src="https://raw.githubusercontent.com/AmitThakkar/AngularJS-Tree/master/images/tree.png" alt="tree.png"></p>
+
+<p>And <code>valid JSON</code> for the <strong>tree</strong> is as given below:</p>
+
+<div class="highlight highlight-source-json"><pre>[
+  {
+    <span class="pl-s"><span class="pl-pds">"</span>name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Vegetarian Recipes<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>checked<span class="pl-pds">"</span></span>: <span class="pl-c1">false</span>,
+    <span class="pl-s"><span class="pl-pds">"</span>children<span class="pl-pds">"</span></span>: [
+      {
+        <span class="pl-s"><span class="pl-pds">"</span>name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Fruits<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>checked<span class="pl-pds">"</span></span>: <span class="pl-c1">false</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>children<span class="pl-pds">"</span></span>: [
+          {
+            <span class="pl-s"><span class="pl-pds">"</span>name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Dry Fruits<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>checked<span class="pl-pds">"</span></span>: <span class="pl-c1">false</span>,
+            <span class="pl-s"><span class="pl-pds">"</span>children<span class="pl-pds">"</span></span>: [
+              {
+                <span class="pl-s"><span class="pl-pds">"</span>name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Almond<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>checked<span class="pl-pds">"</span></span>: <span class="pl-c1">false</span>
+              },
+              <span class="pl-ii">...</span>
+            ]
+          },
+          {
+            <span class="pl-s"><span class="pl-pds">"</span>name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Fresh Fruits<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>checked<span class="pl-pds">"</span></span>: <span class="pl-c1">false</span>,
+            <span class="pl-s"><span class="pl-pds">"</span>children<span class="pl-pds">"</span></span>: [
+              {
+                <span class="pl-s"><span class="pl-pds">"</span>name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Apple<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>checked<span class="pl-pds">"</span></span>: <span class="pl-c1">false</span>
+              },
+              <span class="pl-ii">...</span>
+            ]
+          },
+          <span class="pl-ii">...</span>
+        ]
+      },
+      {
+        <span class="pl-s"><span class="pl-pds">"</span>name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Soup<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>checked<span class="pl-pds">"</span></span>: <span class="pl-c1">false</span>,
+        <span class="pl-s"><span class="pl-pds">"</span>children<span class="pl-pds">"</span></span>: [
+          {
+            <span class="pl-s"><span class="pl-pds">"</span>name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Tomato Soup<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>checked<span class="pl-pds">"</span></span>: <span class="pl-c1">false</span>
+          },
+          <span class="pl-ii">...</span>
+        ]
+      }
+    ]
+  },
+  {
+    <span class="pl-s"><span class="pl-pds">"</span>name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Non-vegetarian Recipes<span class="pl-pds">"</span></span>,
+    <span class="pl-s"><span class="pl-pds">"</span>checked<span class="pl-pds">"</span></span>: <span class="pl-c1">false</span>
+  }
+]</pre></div>
+
+<p>Let's see, how I have implemented this? For implementing the <strong>tree</strong>, I have created 2 <strong>directives</strong>.</p>
+
+<ol>
+<li>
+<strong>nodeTree</strong> : An <strong>isolated</strong> <strong>scope</strong> <strong>directive</strong> which will loop to the all the siblings and add another <strong>directive</strong>(node) for each sibling.</li>
+<li>
+<strong>node</strong> : A <strong>directive</strong> which represents a node/element and creates sub <strong>tree</strong> as its children.</li>
+</ol>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">app</span>.<span class="pl-en">directive</span>(<span class="pl-s"><span class="pl-pds">'</span>nodeTree<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> () {
+  <span class="pl-k">return</span> {
+    template<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>&lt;node ng-repeat="node in tree"&gt;&lt;/node&gt;<span class="pl-pds">'</span></span>,
+    replace<span class="pl-k">:</span> <span class="pl-c1">true</span>,
+    restrict<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>E<span class="pl-pds">'</span></span>,
+    scope<span class="pl-k">:</span> {
+      tree<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>=children<span class="pl-pds">'</span></span>
+    }
+  };
+});
+<span class="pl-smi">app</span>.<span class="pl-en">directive</span>(<span class="pl-s"><span class="pl-pds">'</span>node<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">$compile</span>) {
+  <span class="pl-k">return</span> {
+    restrict<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>E<span class="pl-pds">'</span></span>,
+    replace<span class="pl-k">:</span> <span class="pl-c1">true</span>,
+    templateUrl<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>partials/node.html<span class="pl-pds">'</span></span>, <span class="pl-c">// HTML for a single node.</span>
+    <span class="pl-en">link</span><span class="pl-k">:</span> <span class="pl-k">function</span> (<span class="pl-smi">scope</span>, <span class="pl-smi">element</span>) {
+      <span class="pl-c">/*</span>
+<span class="pl-c">       * Here we are checking that if current node has children then compiling/rendering children.</span>
+<span class="pl-c">       * */</span>
+      <span class="pl-k">if</span> (<span class="pl-smi">scope</span>.<span class="pl-smi">node</span> <span class="pl-k">&amp;&amp;</span> <span class="pl-smi">scope</span>.<span class="pl-smi">node</span>.<span class="pl-smi">children</span> <span class="pl-k">&amp;&amp;</span> <span class="pl-smi">scope</span>.<span class="pl-smi">node</span>.<span class="pl-smi">children</span>.<span class="pl-c1">length</span> <span class="pl-k">&gt;</span> <span class="pl-c1">0</span>) {
+        <span class="pl-k">var</span> childNode <span class="pl-k">=</span> <span class="pl-en">$compile</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;ul class="tree" ng-if="!node.visibility"&gt;&lt;node-tree children="node.children"&gt;&lt;/node-tree&gt;&lt;/ul&gt;<span class="pl-pds">'</span></span>)(scope);
+        <span class="pl-smi">element</span>.<span class="pl-en">append</span>(childNode);
+      }
+    },
+    controller<span class="pl-k">:</span> [<span class="pl-s"><span class="pl-pds">"</span>$scope<span class="pl-pds">"</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">$scope</span>) {
+      <span class="pl-c">// This function is for just toggle the visibility of children</span>
+      <span class="pl-smi">$scope</span>.<span class="pl-en">toggleVisibility</span> <span class="pl-k">=</span> <span class="pl-k">function</span> (<span class="pl-smi">node</span>) {
+        <span class="pl-smi">node</span>.<span class="pl-smi">visibility</span> <span class="pl-k">=</span> <span class="pl-k">!</span><span class="pl-smi">node</span>.<span class="pl-smi">visibility</span>;
+      };
+      <span class="pl-c">// Here We are marking check/un-check all the nodes. </span>
+      <span class="pl-smi">$scope</span>.<span class="pl-en">checkNode</span> <span class="pl-k">=</span> <span class="pl-k">function</span> (<span class="pl-smi">node</span>) {
+        <span class="pl-smi">node</span>.<span class="pl-c1">checked</span> <span class="pl-k">=</span> <span class="pl-k">!</span><span class="pl-smi">node</span>.<span class="pl-c1">checked</span>;
+        <span class="pl-k">function</span> <span class="pl-en">checkChildren</span>(<span class="pl-smi">c</span>) {
+          <span class="pl-smi">angular</span>.<span class="pl-en">forEach</span>(<span class="pl-smi">c</span>.<span class="pl-smi">children</span>, <span class="pl-k">function</span> (<span class="pl-smi">c</span>) {
+            <span class="pl-smi">c</span>.<span class="pl-c1">checked</span> <span class="pl-k">=</span> <span class="pl-smi">node</span>.<span class="pl-c1">checked</span>;
+            <span class="pl-en">checkChildren</span>(c);
+          });
+        }
+        <span class="pl-en">checkChildren</span>(node);
+      };
+    }]
+  };
+});</pre></div>
+
+<p>You can checkout working <strong>tree</strong> demo from my <a href="https://github.com/AmitThakkar/AngularJS-Tree">Github Repo</a></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/AmitThakkar/AngularJS-Tree">Angularjs-tree</a> is maintained by <a href="https://github.com/AmitThakkar">AmitThakkar</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
