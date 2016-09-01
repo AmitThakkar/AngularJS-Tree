@@ -12,7 +12,7 @@
   <body>
     <section class="page-header">
       <h1 class="project-name">Angularjs Tree</h1>
-      <h2 class="project-tagline"></h2>
+      <h2 class="project-tagline">This blog explains who to create tree with AngularJS </h2>
       <a href="https://github.com/AmitThakkar/AngularJS-Tree" class="btn">View on GitHub</a>
       <a href="https://github.com/AmitThakkar/AngularJS-Tree/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/AmitThakkar/AngularJS-Tree/tarball/master" class="btn">Download .tar.gz</a>
@@ -113,19 +113,19 @@
 <span class="pl-c">       * */</span>
       <span class="pl-k">if</span> (<span class="pl-smi">scope</span>.<span class="pl-smi">node</span> <span class="pl-k">&amp;&amp;</span> <span class="pl-smi">scope</span>.<span class="pl-smi">node</span>.<span class="pl-smi">children</span> <span class="pl-k">&amp;&amp;</span> <span class="pl-smi">scope</span>.<span class="pl-smi">node</span>.<span class="pl-smi">children</span>.<span class="pl-c1">length</span> <span class="pl-k">&gt;</span> <span class="pl-c1">0</span>) {
         <span class="pl-k">var</span> childNode <span class="pl-k">=</span> <span class="pl-en">$compile</span>(<span class="pl-s"><span class="pl-pds">'</span>&lt;ul class="tree" ng-if="!node.visibility"&gt;&lt;node-tree children="node.children"&gt;&lt;/node-tree&gt;&lt;/ul&gt;<span class="pl-pds">'</span></span>)(scope);
-        <span class="pl-smi">element</span>.<span class="pl-en">append</span>(childNode);
+        <span class="pl-smi">element</span>.<span class="pl-c1">append</span>(childNode);
       }
     },
     controller<span class="pl-k">:</span> [<span class="pl-s"><span class="pl-pds">"</span>$scope<span class="pl-pds">"</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">$scope</span>) {
       <span class="pl-c">// This function is for just toggle the visibility of children</span>
       <span class="pl-smi">$scope</span>.<span class="pl-en">toggleVisibility</span> <span class="pl-k">=</span> <span class="pl-k">function</span> (<span class="pl-smi">node</span>) {
-        <span class="pl-smi">node</span>.<span class="pl-smi">visibility</span> <span class="pl-k">=</span> <span class="pl-k">!</span><span class="pl-smi">node</span>.<span class="pl-smi">visibility</span>;
+        <span class="pl-smi">node</span>.<span class="pl-c1">visibility</span> <span class="pl-k">=</span> <span class="pl-k">!</span><span class="pl-smi">node</span>.<span class="pl-c1">visibility</span>;
       };
       <span class="pl-c">// Here We are marking check/un-check all the nodes. </span>
       <span class="pl-smi">$scope</span>.<span class="pl-en">checkNode</span> <span class="pl-k">=</span> <span class="pl-k">function</span> (<span class="pl-smi">node</span>) {
         <span class="pl-smi">node</span>.<span class="pl-c1">checked</span> <span class="pl-k">=</span> <span class="pl-k">!</span><span class="pl-smi">node</span>.<span class="pl-c1">checked</span>;
         <span class="pl-k">function</span> <span class="pl-en">checkChildren</span>(<span class="pl-smi">c</span>) {
-          <span class="pl-smi">angular</span>.<span class="pl-en">forEach</span>(<span class="pl-smi">c</span>.<span class="pl-smi">children</span>, <span class="pl-k">function</span> (<span class="pl-smi">c</span>) {
+          <span class="pl-smi">angular</span>.<span class="pl-c1">forEach</span>(<span class="pl-smi">c</span>.<span class="pl-smi">children</span>, <span class="pl-k">function</span> (<span class="pl-smi">c</span>) {
             <span class="pl-smi">c</span>.<span class="pl-c1">checked</span> <span class="pl-k">=</span> <span class="pl-smi">node</span>.<span class="pl-c1">checked</span>;
             <span class="pl-en">checkChildren</span>(c);
           });
@@ -145,7 +145,7 @@
 
 <p><a href="https://in.linkedin.com/in/amitthakkar01">LinkedIn</a></p>
 
-<p><a href="http://amitthakkar.github.io/">More Blogs By Me</a></p>
+<p><a href="https://amitthakkar.github.io/">More Blogs By Me</a></p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/AmitThakkar/AngularJS-Tree">Angularjs Tree</a> is maintained by <a href="https://github.com/AmitThakkar">AmitThakkar</a>.</span>
